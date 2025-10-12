@@ -22,19 +22,18 @@
 | `docker run {imageName}:{tag}` | Run a container <br> _eg:-_ `docker run nginx:stable-alpine3.20-perl`|
 | `docker container prune`|Remove all stopped containers|
 | `docker run {imageName}:{tag}` | Run container | `docker run nginx:stable-alpine3.20-perl` |
-| `docker run -d {imageName}:{tag}` | `-d` Run container in background (detached mode) <br> _eg:-_ `docker run -d nginx:stable-alpine3.20-perl`|
-| `docker run {imageName}:{tag} --rm` | `--rm` Delete the container once it stop |
-| `docker run {imageName}:{tag} --name {containerName}` | `--name {containerName}` To Name a container otherwise it creates own name.
-| `docker run -p {hostPort}:{containerPort} {imageName}:{tag}` | `-p {hostPort}:{containerPort}` Run container with port binding and <br> _eg:-_ `docker run -d -p 9000:80 nginx:latest`|
-| `docker run -d -p {hostPort}:{containerPort} {imageName}:{tag} --name {containerName}` | Run container with port binding and custom name <br> _eg:-_ `docker run -d -p 9000:80 nginx:latest`|
 | `docker logs {containerId/name}` | View logs from container | `docker logs nginx` |
 | `docker stop {containerId/Name}` | Stop running container |
-| `docker run -e {key1}={val1} -e {key2}={val2} {image}:{tag}` | Run container with environment variables |
 
 ---
 
 # Docker Run Commands
-	```bash
-	docker run -p {hostPort}:{containerPort} \
-		-d -e {key1}={val1} -e {key2}={val2} {image}:{tag} \
-		```
+```bash
+docker run -d -p {hostPort}:{containerPort} -e {key}={value} --name {containerName} --rm {imageName}:{tag}
+```
+ - `-d` Run container in background and print container ID
+ - `-p {hostPort}:{containerPort}` Publish a container's port to the host
+ - `-e {key}={value}` Environment variable
+ - `--name {containerName}` Assign a name to the container
+ - `--rm` Delete the container once it stop
+---

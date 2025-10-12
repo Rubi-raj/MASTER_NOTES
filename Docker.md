@@ -24,6 +24,7 @@
 | `docker run {imageName}:{tag}` | Run container | `docker run nginx:stable-alpine3.20-perl` |
 | `docker logs {containerId/name}` | View logs from container | `docker logs nginx` |
 | `docker stop {containerId/Name}` | Stop running container |
+| `docker exec -it {containerId/Name} /bin/bash` | Open inside a container to debug |
 ---
 # Docker Run Commands
 ```bash
@@ -41,3 +42,8 @@ docker run -d -p {hostPort}:{containerPort} -e {key}={value} --name {containerNa
 | Small image | Typically smaller image |
 | Debian-based Linux | Alpine Linux |
 ---
+# Docker Mounts
+ - Volumes
+ - Bind-mounts
+ - Tempfs mounts <br>
+`docker run -v {/path/in/host}:{/path/in/container} {imageName}:{tag}`

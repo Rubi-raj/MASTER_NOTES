@@ -14,11 +14,11 @@
   - Docker hosts one of the biggest Docker Registry, called “Docker Hub”.
 ---
 # Docker Commands
-| Command | Description | Example |
-|--------|-------------|---------|
-| `docker images`<br>`docker image ls` | List all Docker images | — |
-| `docker ps` | List running containers | — |
-| `docker pull {image}:{tag}` | Pull an image from a registry | `docker pull nginx:stable-alpine3.20-perl` |
+| Command | Description |
+|--------|-------------|
+| `docker images` `docker image ls` | List all Docker images |
+| `docker ps` | List running containers |
+| `docker pull {image}:{tag}` | Pull an image from a registry <br> `docker pull nginx:stable-alpine3.20-perl`
 | `docker run {image}:{tag}` | Run a container | `docker run nginx:stable-alpine3.20-perl` |
 | `docker container prune` | Remove all stopped containers | — |
 | `docker run -d {image}:{tag}` | Run container in background (detached mode) | `docker run -d nginx:stable-alpine3.20-perl` |

@@ -24,9 +24,7 @@
 | `docker run {imageName}:{tag}` | Run container | `docker run nginx:stable-alpine3.20-perl` |
 | `docker logs {containerId/name}` | View logs from container | `docker logs nginx` |
 | `docker stop {containerId/Name}` | Stop running container |
-
 ---
-
 # Docker Run Commands
 ```bash
 docker run -d -p {hostPort}:{containerPort} -e {key}={value} --name {containerName} --rm {imageName}:{tag}
@@ -36,4 +34,10 @@ docker run -d -p {hostPort}:{containerPort} -e {key}={value} --name {containerNa
  - `-e {key}={value}` Environment variable
  - `--name {containerName}` Assign a name to the container
  - `--rm` Delete the container once it stop
+---
+# Slim & Alphine Images
+| Slim | Alphine |
+|--------|-------------|
+| Small image | Typically smaller image |
+| Debian-based Linux | Alpine Linux |
 ---

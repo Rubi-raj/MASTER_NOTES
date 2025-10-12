@@ -18,11 +18,10 @@
 |--------|-------------|
 | `docker images` or `docker image ls` | List all Docker images |
 | `docker ps` | List running containers |
-| `docker pull {imageName}:{tag}` | Pull an image from a registry <br> _eg:-_ `docker pull nginx:stable-alpine3.20-perl`
-| `docker run {imageName}:{tag}` | Run a container <br> _eg:-_ `docker run nginx:stable-alpine3.20-perl`|
-| `docker container prune`|Remove all stopped containers|
-| `docker run {imageName}:{tag}` | Run container | `docker run nginx:stable-alpine3.20-perl` |
-| `docker logs {containerId/name}` | View logs from container | `docker logs nginx` |
+| `docker pull {imageName}:{tag}` | Pull an image from a registry |
+| `docker run {imageName}:{tag}` | Run a container |
+| `docker container prune`|Remove all stopped containers |
+| `docker logs {containerId/name}` | View logs from container |
 | `docker stop {containerId/Name}` | Stop running container |
 | `docker exec -it {containerId/Name} /bin/bash` | Open inside a container to debug |
 ---

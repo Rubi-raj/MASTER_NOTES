@@ -39,3 +39,7 @@ spring.cloud.config.server.git.uri: file://${user.home}/config-repo
 	</dependency>
 </dependencies>
 ```
+### URL
+**Syntax:**
+ `http://localhost:8888/<file-name>/<profile>` <br>
+ _eg:-_ `http://localhost:8888/application/default`

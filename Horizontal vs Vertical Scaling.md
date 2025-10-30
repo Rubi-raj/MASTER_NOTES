@@ -1,5 +1,5 @@
 # Horizontal vs Vertical Scaling
-![Horizontal vs Vertical Scaling](images/Horizontal vs Vertical_1.png)
+![Horizontal vs Vertical Scaling](images/HorizontalvsVertical_1.png)
 
 - **Horizontal (→)**  
   Horizontal Scaling refers to adding additional nodes of the same setup.

@@ -1,6 +1,11 @@
-<p align="center">
+<!-- <p align="center">
   <img src="images/docker-blackblue.svg" alt="Docker" style="width:400px; height:500; display:block; margin:0 auto;">
+</p> -->
+
+<p align="center">
+  <img src="images/docker-plainblue.svg" alt="Docker" style="width:400px; height:500; display:block; margin:0 auto;">
 </p>
+
 
 # What is Docker ?
   Docker is a virtualization software, makes developing and deploying applications much easier.

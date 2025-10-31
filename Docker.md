@@ -1,13 +1,8 @@
-<!-- <p align="center">
-  <img src="images/docker-blackblue.svg" alt="Docker" style="width:400px; height:500; display:block; margin:0 auto;">
-</p> -->
-
 <p align="center">
-  <img src="images/docker-plainblue.svg" alt="Docker" style="width:400px; height:500; display:block; margin:0 auto;">
+  <img src="https://files.svgcdn.io/logos/docker.svg" width="250" height="100">
 </p>
 
-
-# What is Docker ?
+#  What is Docker ?
   Docker is a virtualization software, makes developing and deploying applications much easier.
 ## Docker Images Vs Containers
   Images are templates for containers.

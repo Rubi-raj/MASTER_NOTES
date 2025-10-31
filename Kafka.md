@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/kafka.svg" width="200" height="75" />
+  <img src="https://files.svgcdn.io/logos/kafka.svg" width="175" height="100">
 </p>
 
 ## What is Kafka ?

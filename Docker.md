@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/docker-blackblue.svg" alt="Docker" style="width:400px; height:500; display:block; margin:0 auto;">
+</p>
+
 # What is Docker ?
   Docker is a virtualization software, makes developing and deploying applications much easier.
 ## Docker Images Vs Containers

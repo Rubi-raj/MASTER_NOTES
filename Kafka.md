@@ -2,7 +2,7 @@
   <img src="https://files.svgcdn.io/logos/kafka.svg" width="175" height="100">
 </p>
 
-## What is Kafka ?
+# What is Kafka ?
  Apache Kafka is a **distributed streaming platform** used for building real-time data pipelines and applications, acting as a high-throughput, low-latency platform for handling real-time data feeds.
 
 ## What is DLT ?  

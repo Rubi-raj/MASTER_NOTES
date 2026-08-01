@@ -20,7 +20,7 @@
 
 * **Strict Consistency & Accuracy** - No Money loss or double charges.
 * **High Availability & Reliability** - Targeting 99.99% uptime, No payment downtime.
-* **Security & Compliance** - PCI DSS standards
+* **Security & Compliance** - PCI DSS compliance
 * **Idempotency** - Network failure will happen, therefore retry must not result duplicate charges.
 * **Performance** - Relatively Low Latency for the initial synchronous authentication step. Try to ensure 2 to 3 seconds
   for user checkout experience.
@@ -78,8 +78,8 @@ Body :
 
 ## High Level Design
 
-![img.png](StripeHLD/img.png)
+![img.png](images/StripeHLD.png)
 
 ## Completed Architecture
 
-![img.png](StripeCompleteArchitecture/img.png)
+![img.png](images/StripeCompleteArchitecture.png)

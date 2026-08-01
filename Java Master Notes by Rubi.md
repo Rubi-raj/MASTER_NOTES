@@ -5,77 +5,64 @@
 <!-- TOC -->
 
 * [🍵Java Notes by Rubi raj](#java-notes-by-rubi-raj)
-	* [📝Index](#index)
-	* [🔍 What is Java ?](#-what-is-java-)
-		* [🤔 Meaning of Java ?](#-meaning-of-java-)
-	* [🔍 Variables](#-variables)
-	* [🔍 Data Types](#-data-types)
-	* [🔍 JVM Memory](#-jvm-memory)
-	* [🔍 Naming Convention](#-naming-convention)
-	* [🔍 String](#-string)
-		* [1️⃣ Why is String immutable❓](#1-why-is-string-immutable)
-		* [2️⃣ Can we make String mutable❓](#2-can-we-make-string-mutable)
-		* [3️⃣ What is String Constant Pool ?](#3-what-is-string-constant-pool-)
-		* [4️⃣ String use `char[]` or `byte[]` to hold value❓](#4-string-use-char-or-byte-to-hold-value)
-		* [🔹Java 8 and bellow](#java-8-and-bellow)
-		* [🔹 After Java 9 (Compact Strings)](#-after-java-9-compact-strings)
-		* [5️⃣ Explain internal working of concatenation❓](#5-explain-internal-working-of-concatenation)
-	* [🔍 Abstract class vs Interface](#-abstract-class-vs-interface)
-		* [Abstract class](#abstract-class)
-		* [Interface](#interface)
-	* [🔍 final vs finally vs finalize ?](#-final-vs-finally-vs-finalize-)
-	* [🔍 equals() vs hashCode()](#-equals-vs-hashcode)
-	* [🔍 Comparable vs Comparator](#-comparable-vs-comparator)
-		* [🔹 Comparable](#-comparable)
-		* [🔹 Comparator](#-comparator)
-	* [🔍 How HashMap internally works ?](#-how-hashmap-internally-works-)
-		* [What is Hash Collision ?](#what-is-hash-collision-)
-		* [Internal Implementation](#internal-implementation)
-	* [🔍 Java Programs ?](#-java-programs-)
-	* [🔍 String Programs ?](#-string-programs-)
-	* [🔍 Concepts from core Java ?](#-concepts-from-core-java-)
-	* [🔍 Q/A](#-qa)
-	* [Exceptions in Java](#exceptions-in-java)
-		* [ArithmeticException](#arithmeticexception)
-		* [ArrayIndexOutOfBoundsException](#arrayindexoutofboundsexception)
-		* [ClassNotFoundException](#classnotfoundexception)
-		* [FileNotFoundException](#filenotfoundexception)
-		* [IOException](#ioexception)
-		* [InterruptedException](#interruptedexception)
-		* [NoSuchFieldException](#nosuchfieldexception)
-		* [NoSuchMethodException](#nosuchmethodexception)
-		* [NullPointerException](#nullpointerexception)
-		* [NumberFormatException](#numberformatexception)
-		* [RuntimeException](#runtimeexception)
-		* [StringIndexOutOfBoundsException](#stringindexoutofboundsexception)
-		* [InputMismatchException](#inputmismatchexception)
+    * [📝Index](#index)
+    * [🔍 What is Java ?](#-what-is-java-)
+        * [🤔 Meaning of Java ?](#-meaning-of-java-)
+    * [🔍 Variables](#-variables)
+    * [🔍 Data Types](#-data-types)
+    * [🔍 JVM Memory](#-jvm-memory)
+    * [🔍 Naming Convention](#-naming-convention)
+    * [🔍 String](#-string)
+        * [1️⃣ Why is String immutable❓](#1-why-is-string-immutable)
+        * [2️⃣ Can we make String mutable❓](#2-can-we-make-string-mutable)
+        * [3️⃣ What is String Constant Pool ?](#3-what-is-string-constant-pool-)
+        * [4️⃣ String use `char[]` or `byte[]` to hold value❓](#4-string-use-char-or-byte-to-hold-value)
+        * [🔹Java 8 and bellow](#java-8-and-bellow)
+        * [🔹 After Java 9 (Compact Strings)](#-after-java-9-compact-strings)
+        * [5️⃣ Explain internal working of concatenation❓](#5-explain-internal-working-of-concatenation)
+    * [🔍 Abstract class vs Interface](#-abstract-class-vs-interface)
+        * [Abstract class](#abstract-class)
+        * [Interface](#interface)
+    * [🔍 final vs finally vs finalize ?](#-final-vs-finally-vs-finalize-)
+    * [🔍 equals() vs hashCode()](#-equals-vs-hashcode)
+    * [🔍 Comparable vs Comparator](#-comparable-vs-comparator)
+        * [🔹 Comparable](#-comparable)
+        * [🔹 Comparator](#-comparator)
+    * [🔍 How HashMap internally works ?](#-how-hashmap-internally-works-)
+        * [What is Hash Collision ?](#what-is-hash-collision-)
+        * [Internal Implementation](#internal-implementation)
+    * [🔍 Java Programs ?](#-java-programs-)
+    * [🔍 String Programs ?](#-string-programs-)
+    * [🔍 Concepts from core Java ?](#-concepts-from-core-java-)
+    * [🔍 Q/A](#-qa)
+    * [Exceptions in Java](#exceptions-in-java)
+        * [ArithmeticException](#arithmeticexception)
+        * [ArrayIndexOutOfBoundsException](#arrayindexoutofboundsexception)
+        * [ClassNotFoundException](#classnotfoundexception)
+        * [FileNotFoundException](#filenotfoundexception)
+        * [IOException](#ioexception)
+        * [InterruptedException](#interruptedexception)
+        * [NoSuchFieldException](#nosuchfieldexception)
+        * [NoSuchMethodException](#nosuchmethodexception)
+        * [NullPointerException](#nullpointerexception)
+        * [NumberFormatException](#numberformatexception)
+        * [RuntimeException](#runtimeexception)
+        * [StringIndexOutOfBoundsException](#stringindexoutofboundsexception)
+        * [InputMismatchException](#inputmismatchexception)
 * [Java Notes by Rubi raj Mani](#java-notes-by-rubi-raj-mani)
-	* [1️⃣ How a Java Class will Load ?](#1-how-a-java-class-will-load-)
-	* [3️⃣ Method Overloading vs Overriding](#3-method-overloading-vs-overriding)
-		* [Hashtable vs Hashmap vs ConcurrentHashMap](#hashtable-vs-hashmap-vs-concurrenthashmap)
-	* [🔍 What is Java LTS Versions & Major Features](#-what-is-java-lts-versions--major-features)
-		* [**Java 8**](#java-8)
-		* [**Java 11**](#java-11)
-		* [**Java 17**](#java-17)
-		* [**Java 21**](#java-21)
-	* [🔍 Records](#-records)
-		* [📌 Record Scope](#-record-scope)
-		* [📌 Where Records Can Exist ?](#-where-records-can-exist-)
+    * [1️⃣ How a Java Class will Load ?](#1-how-a-java-class-will-load-)
+    * [3️⃣ Method Overloading vs Overriding](#3-method-overloading-vs-overriding)
+        * [Hashtable vs Hashmap vs ConcurrentHashMap](#hashtable-vs-hashmap-vs-concurrenthashmap)
+    * [🔍 What is Java LTS Versions & Major Features](#-what-is-java-lts-versions--major-features)
+        * [**Java 8**](#java-8)
+        * [**Java 11**](#java-11)
+        * [**Java 17**](#java-17)
+        * [**Java 21**](#java-21)
+    * [🔍 Records](#-records)
+        * [📌 Record Scope](#-record-scope)
+        * [📌 Where Records Can Exist ?](#-where-records-can-exist-)
 
 <!-- TOC -->
-
-1. What is Java ?
-2. OOPS
-3. Variables
-4. Data Types
-5. JVM Memory
-6. Naming convention
-7. String vs String Builder vs String Buffer
-8. Abstraction vs Interface
-9. final vs finally vs finalize
-10. equals() vs hashCode()
-11. Comparable vs Comparator
-12. How HashMap internally works ?
 
 ## 🔍 What is Java ?
 
@@ -106,11 +93,11 @@ Variable is a key to store their values. There are three types of variables.
 ## 🔍 JVM Memory
 
 * **Method Area** - Metadata of the class, Blueprint of the class.
-	* Static variables
-	* Class name
-	* Immediate parent class name
-	* Methods
-	* Variables information
+    * Static variables
+    * Class name
+    * Immediate parent class name
+    * Methods
+    * Variables information
 * **Heap Memory** - All objects is stored in the heap area. (**Instance variables**)
 * **Stack Memory** - Thread audit information, **Reference variables.**
 * **PC Registers** - Store address of **current execution thread information**. Each thread has separate PC
@@ -149,10 +136,15 @@ String s2 = new String("world");
 | **Memory**            | SCP and Heap | Heap                           | Heap                         |
 
 > **Note:** StringBuffer and StringBuilder value can **compare only converting them to String**.
+
 ```java
 StringBuilder sb1 = new StringBuilder("hii");
 StringBuilder sb2 = new StringBuilder("hii");
-System.out.println(sb1.toString().equals(sb2.toString()));
+System.out.
+
+println(sb1.toString().
+
+equals(sb2.toString()));
 ```
 
 ### 1️⃣ Why is String immutable❓
@@ -183,8 +175,8 @@ It's present inside Heap Space.
 ### 🔹 After Java 9 (Compact Strings)
 
 * Java 9 introduced **Compact Strings**, String stored data as `byte[]`.
-	* `byte[] value` → actual data
-	* `coder` → tells encoding type
+    * `byte[] value` → actual data
+    * `coder` → tells encoding type
 
 | coder value | Meaning                  |
 |-------------|--------------------------|
@@ -423,18 +415,18 @@ a.lastIndexOf("h",3) // display the index num /else return -1
   using** `try-catch`.
 * They are **checked at compile-time**. 🕐
 * **Examples:**
-	- [x] `IOException` (e.g., file not found) 📂
-	- [x] `SQLException` (e.g., database connection failure) 💽
-	- [x] `InterruptedException` (e.g., thread interruption)
+    - [x] `IOException` (e.g., file not found) 📂
+    - [x] `SQLException` (e.g., database connection failure) 💽
+    - [x] `InterruptedException` (e.g., thread interruption)
 
 ### 📙Unchecked Exceptions:
 
 * Unchecked exceptions are **runtime errors** that **do not require explicit handling**.❌
 * They are **checked at runtime**, meaning they occur due to **logical errors** in the program.🧠
 * **Examples:**
-	- [x] `NullPointerException` (e.g., calling a method on `null`) ⛔
-	- [x] `ArrayIndexOutOfBoundsException` (e.g., access an invalid array index)
-	- [x] `ArithmeticException` (e.g., division by zero) ➗
+    - [x] `NullPointerException` (e.g., calling a method on `null`) ⛔
+    - [x] `ArrayIndexOutOfBoundsException` (e.g., access an invalid array index)
+    - [x] `ArithmeticException` (e.g., division by zero) ➗
 
 # Java Notes by Rubi raj Mani
 
@@ -473,9 +465,15 @@ add(long a, long b);
 
 ### Hashtable vs Hashmap vs ConcurrentHashMap
 
-| Hashtable  |  HashMap  |  ConcurrentHashMap |
-|:-----------|:---------:|-------------------:|
-| Legacy     |           |                    |
+| Feature            | Hashtable               | HashMap                  | ConcurrentHashMap                     |
+|--------------------|-------------------------|--------------------------|---------------------------------------|
+| Thread safe        | Yes                     | No                       | Yes                                   |
+| Synchronization    | Entire map synchronized | None                     | Segment/bucket level synchronization  |
+| Performance        | Slowest                 | Fastest in single thread | Better than Hashtable in multi-thread |
+| Null key allowed   | No                      | Yes, one null key        | No                                    |
+| Null value allowed | No                      | Yes                      | No                                    |
+| Introduced in      | Java 1.0                | Java 1.2                 | Java 5                                |
+| Iterator behavior  | Fail-fast               | Fail-fast                | Weakly consistent                     |
 
 ## 🔍 What is Java LTS Versions & Major Features
 
@@ -556,6 +554,37 @@ void process() {
 	User user = new User("Rubi");
 }
 ```
+
+## Sealed Classes
+
+A sealed class in Java 17 is a class or interface that allows you to **restrict which classes can extend or implement
+it.**
+It gives controlled inheritance.
+
+### 🚩Rules in Sealed class
+
+1. Permitted subclass must explicitly extend sealed class
+2. Permitted subclass must be in same package or same module.
+3. Permitted subclass must define a modifier: Either `final`, or `sealed`, or `non-sealed`.
+
+<!-- @formatter:off -->
+```java
+// limiting the inheritance
+sealed interface TwoWheelers permits Cycle, Bike, Bullet {}
+
+// subclass must be marked with final
+final class Cycle implements TwoWheelers {}
+
+final class Bike implements TwoWheelers {}
+
+// non-sealed opens the inheritance
+non-sealed class Bullet implements TwoWheelers {}
+```
+<!-- @formatter:on -->
+
+## Pattern Matching
+
+Pattern Matching = Type Check + Casting + Variable Declaration
 
 ## 🔍 Collection Framework
 
